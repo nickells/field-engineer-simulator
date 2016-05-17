@@ -1,0 +1,29 @@
+body{
+  text-align: center;
+  font-family: 'Lucida Grande'
+}
+
+body * {
+  transition: .5s;
+}
+
+#repair {
+  color: blue;
+  font-size: 20pt;
+  width: 150px;
+}
+
+MainContent div{
+  padding: 10px;
+}
+
+#toggle {
+  width: 25px;
+}
+
+.leaderboard,.achievements{
+  display: inline-block;
+  border: 1px solid grey;
+  padding: 20px;
+  width: auto;
+}

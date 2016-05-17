@@ -1,0 +1,6 @@
+let buttons = document.getElementById('buttons')
+let scoreSpan = document.getElementById('score')
+let leaderboards = document.getElementById('leaderboards')
+let achievements = document.getElementById('achievements')
+let playerDOM = document.getElementById('player')
+let name = document.getElementById('name')

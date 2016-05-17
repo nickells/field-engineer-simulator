@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Field Engineer Sim</title>
+  <meta id="clientId" name="google-signin-client_id"/>
+  <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+  <meta name="google-signin-callback" content="signinCallback" />
+  <meta name="google-signin-scope" content="https://www.googleapis.com/auth/games" />
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/client.js"></script>
+  <script type="text/javascript" src="settings.json"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  <span id="name"></span>
+  <MainContent>
+    <div><button id="repair" onclick="repair()">Click here to fix an HVAC</button></div>
+
+    <div id="feedback">You've repaired <span id="score">0</span> HVACS.</div>
+
+    <div><button id="submit" onclick="submitScore()">Click here to submit a score</button></div>
+
+    <div class="leaderboard">
+      <div>LEADERBOARDS</div>
+      <span>PUBLIC</span><input onchange="changeLeaderboard(this.value)" value="0" type="range" min="0" max="1" id="toggle"/><span>SOCIAL</span>
+      <div id="leaderboards"></div>
+    </div>
+    <div id="achievements">
+      <div>ACHIEVEMENTS</div>
+    </div>
+    <div id="player">
+    </div>
+
+
+    <div><a href="#" id="signOut" onclick="signOut();">Sign out</a></div>
+  </MainContent>
+  <script src="./scripts/dom.js"></script>
+  <script src="./scripts/init.js"></script>
+  <script src="./scripts/constants.js"></script>
+  <script src="./scripts/player.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/leaderboard.js"></script>
+  <script src="./scripts/achievement.js"></script>
+
+
+</body>
+</html>
