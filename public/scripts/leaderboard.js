@@ -17,10 +17,12 @@ function changeLeaderboard(val){
 }
 
 function renderLeaderboard(leaderboardResp){
+  console.log('render leaderboard')
+  console.log(leaderboardResp)
   let str = '';
   leaderboardResp.items.forEach(item=>{
     str += (item.formattedScoreRank + ': ' + item.formattedScore + ' - ')
-    str += (item.player.name.givenName + ' ' + item.player.name.familyName)
+    str += (item.player.displayName)
     str += '<br />'
   })
   leaderboards.innerHTML = str;
