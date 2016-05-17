@@ -17,8 +17,6 @@ function changeLeaderboard(val){
 }
 
 function renderLeaderboard(leaderboardResp){
-  console.log('render leaderboard')
-  console.log(leaderboardResp)
   let str = '';
   leaderboardResp.items.forEach(item=>{
     str += (item.formattedScoreRank + ': ' + item.formattedScore + ' - ')
