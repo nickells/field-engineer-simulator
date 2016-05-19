@@ -16,15 +16,15 @@
   <div class="g-signin2" data-onsuccess="onSignIn"></div>
   <span id="name"></span>
   <MainContent>
-    <div><button id="repair" onclick="repair()">Click here to fix an HVAC</button></div>
+    <div><button id="repair" onclick="scoreModule.repair()">Click here to fix an HVAC</button></div>
 
     <div id="feedback">You've repaired <span id="score">0</span> HVACS.</div>
 
-    <div><button id="submit" onclick="submitScore()">Click here to submit a score</button></div>
+    <div><button id="submit" onclick="scoreModule.submitScore()">Click here to submit a score</button></div>
 
     <div class="leaderboard">
       <div>LEADERBOARDS</div>
-      <span>PUBLIC</span><input onchange="changeLeaderboard(this.value)" value="0" type="range" min="0" max="1" id="toggle"/><span>SOCIAL</span>
+      <span>PUBLIC</span><input onchange="leaderboardModule.changeLeaderboard(this.value)" value="0" type="range" min="0" max="1" id="toggle"/><span>SOCIAL</span>
       <div id="leaderboards"></div>
     </div>
     <div id="achievements">

@@ -1,6 +1,8 @@
-let buttons = document.getElementById('buttons')
-let scoreSpan = document.getElementById('score')
-let leaderboards = document.getElementById('leaderboards')
-let achievements = document.getElementById('achievements')
-let playerDOM = document.getElementById('player')
-let name = document.getElementById('name')
+let domObject = {
+  buttons : document.getElementById('buttons'),
+  scoreSpan : document.getElementById('score'),
+  leaderboards : document.getElementById('leaderboards'),
+  achievements : document.getElementById('achievements'),
+  playerDOM : document.getElementById('player'),
+  name : document.getElementById('name')
+}
